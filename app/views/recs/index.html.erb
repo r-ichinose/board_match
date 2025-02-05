@@ -1,0 +1,8 @@
+<h1>おすすめボード</h1>
+<% @recommendations.each do |rec| %>
+  <div>
+    <h2><%= rec.board.name %></h2>
+    <p>理由: <%= rec.reason %></p>
+    <p>スコア: <%= rec.score %></p>
+  </div>
+<% end %>

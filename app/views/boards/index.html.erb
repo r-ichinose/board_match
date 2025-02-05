@@ -1,0 +1,14 @@
+<h1>スノーボード一覧</h1>
+
+<% if @boards.any? %>
+  <% @boards.each do |board| %>
+    <div>
+      <h2><%= board.name %></h2>
+      <p><%= board.info %></p>
+      <p>価格: <%= board.price %> 円</p>
+      <hr>
+    </div>
+  <% end %>
+<% else %>
+  <p>現在、ボードが登録されていません。</p>
+<% end %>

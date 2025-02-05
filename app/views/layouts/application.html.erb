@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoardMatch</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
+</head>
+<body>
+  <header>
+    <h1>Board Match</h1>
+    <nav>
+      <button class="btn">ログイン</button>
+      <button class="btn">新規登録</button>
+    </nav>
+  </header>
+  <main>
+    <p>「初心者でも安心！あなたにピッタリのスノーボードを提案します。」</p>
+    <%= yield %>
+  </main>
+</body>
+</html>

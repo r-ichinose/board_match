@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root "boards#index"  # トップページをBoardsの一覧に設定
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :users, only: [:show]
+  resources :boards, only: [:index, :show]
+  resources :favorites, only: [:index, :create, :destroy]
+  resources :recs, only: [:index]
+  resources :reviews, only: [:create]
 end

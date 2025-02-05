@@ -1,0 +1,8 @@
+<h1>お気に入り一覧</h1>
+<% @favorites.each do |favorite| %>
+  <div>
+    <h2><%= favorite.board.name %></h2>
+    <p><%= favorite.board.info %></p>
+    <%= link_to "削除", favorite_path(favorite), method: :delete %>
+  </div>
+<% end %>

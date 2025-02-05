@@ -1,0 +1,43 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background: url('snow_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+main {
+  margin-top: 50px;
+}
